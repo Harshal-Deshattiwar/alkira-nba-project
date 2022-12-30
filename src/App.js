@@ -1,10 +1,11 @@
 import "./App.css";
-import TeamTable2 from "./containers/TeamTable2.js";
+import TeamTable from "./containers/TeamTable.js";
 import Header from "./components/table-header/Header";
+import MainPage from "./containers/MainPage";
 function App() {
   return (
     <div className="App">
-      <TeamTable2 />
+      <MainPage />
     </div>
   );
 }

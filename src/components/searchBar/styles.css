@@ -1,0 +1,28 @@
+.search-bar {
+  margin-top: 39px;
+  margin-bottom: 57px;
+  box-sizing: border-box;
+  width: 750px;
+  height: 72px;
+  background: #ffffff;
+  border: 2px solid #074684;
+  border-radius: 10px;
+}
+.search-bar-input {
+  float: right;
+  width: 640px;
+  height: 57px;
+  margin-top: 6px;
+  margin-left: 2px;
+  margin-right: 6px;
+  border: 0px;
+  font-size: 40px;
+  outline-width: 0;
+}
+
+.search-bar-icon {
+  margin-top: 20px;
+  margin-left: 26px;
+  width: 32px;
+  height: 32px;
+}

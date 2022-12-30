@@ -1,9 +1,16 @@
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import "./rows.css";
-function Rows({ data }) {
+function Rows({ data, selectedTeam }) {
+  const handelClick = (id) => {
+    selectedTeam(id);
+  };
   return (
-    <Card className="row-card">
+    <Card
+      className="row-card"
+      id={data.id}
+      onClick={(e) => handelClick(e.currentTarget.id)}
+    >
       <ListGroup variant="flush" className="row-card-item">
         <ListGroup.Item className="row-card-item-first">
           {data.name}

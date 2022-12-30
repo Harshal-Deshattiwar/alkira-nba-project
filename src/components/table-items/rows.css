@@ -23,20 +23,25 @@
 .row-card-item-first {
   width: 292px;
   margin-right: 9px;
+  margin-top: 30px;
 }
 .row-card-item-second {
   width: 214px;
   margin-right: 21px;
+  margin-top: 30px;
 }
 .row-card-item-third {
   width: 193px;
   margin-right: 44px;
+  margin-top: 30px;
 }
 .row-card-item-fourth {
   width: 183px;
   margin-right: 88px;
+  margin-top: 30px;
 }
 .row-card-item-fifth {
   width: 164px;
   margin-right: 167px;
+  margin-top: 30px;
 }
