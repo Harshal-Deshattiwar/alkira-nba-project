@@ -1,0 +1,42 @@
+.row-card-item {
+  display: flex;
+  height: 42px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 56px;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+.row-card {
+  margin-top: 10px;
+  /* position: absolute; */
+  width: 100%;
+  height: 79px;
+  background: #f8fbfd;
+  border-radius: 5px;
+}
+
+.row-card-item-first {
+  width: 292px;
+  margin-right: 9px;
+}
+.row-card-item-second {
+  width: 214px;
+  margin-right: 21px;
+}
+.row-card-item-third {
+  width: 193px;
+  margin-right: 44px;
+}
+.row-card-item-fourth {
+  width: 183px;
+  margin-right: 88px;
+}
+.row-card-item-fifth {
+  width: 164px;
+  margin-right: 167px;
+}

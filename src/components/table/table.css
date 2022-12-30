@@ -1,0 +1,30 @@
+.table-row {
+  position: absolute;
+  width: 1375px;
+  height: 79px;
+  left: 173px;
+  top: 365px;
+
+  background: #f8fbfd;
+  border-radius: 5px;
+}
+.table-row-data {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 70px;
+
+  color: #ffffff;
+}
+
+.table-header-row {
+  position: absolute;
+  width: 1375px;
+  height: 79px;
+  left: 170px;
+  top: 281px;
+
+  background: #074684;
+  border-radius: 5px;
+}

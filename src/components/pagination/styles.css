@@ -1,0 +1,22 @@
+.pagination {
+  display: flex;
+}
+.pagination button {
+  display: flex;
+  margin-left: 24px;
+  height: 35px;
+  width: 40px;
+  background: #074684;
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 56px;
+  align-items: center;
+  color: #ffffff;
+}
+
+.pagination span {
+  margin-left: 5px;
+}
