@@ -1,9 +1,6 @@
 import "./styles.css";
 import { IoSearch } from "react-icons/io5";
 const SearchBar = ({ searchInput }) => {
-  const handelInput = (data) => {
-    searchInput(data);
-  };
   return (
     <>
       <div className="search-bar">
@@ -11,7 +8,7 @@ const SearchBar = ({ searchInput }) => {
         <input
           type="text"
           className="search-bar-input"
-          onChange={(e) => handelInput(e.target.value)}
+          onChange={(e) => searchInput(e.target.value)}
         ></input>
       </div>
     </>

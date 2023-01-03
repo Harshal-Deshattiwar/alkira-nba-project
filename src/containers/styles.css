@@ -3,12 +3,42 @@
   margin-left: 170px;
 }
 
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .main-page {
+    margin-top: 49px;
+    margin-left: 120px;
+  }
+}
+@media (min-width: 901px) and (max-width: 1199px) {
+  .main-page {
+    margin-top: 49px;
+    margin-left: 50px;
+  }
+  .table {
+    position: relative;
+    max-width: 1087px;
+    margin-right: 60px;
+  }
+}
+@media (min-width: 700px) and (max-width: 900px) {
+  .main-page {
+    margin-top: 49px;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 699px) {
+  .main-page {
+    margin-top: 49px;
+    margin-left: 10px;
+  }
+}
+
 .table {
-  margin-right: 183px;
   position: relative;
+  max-width: 1087px;
 }
 
 .pagination-position {
   float: right;
-  bottom: 0px;
+  margin-top: 20px;
 }

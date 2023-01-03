@@ -1,7 +1,11 @@
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import "./header.css";
-function Header() {
+import { GoTriangleDown, GoTriangleUp } from "react-icons/go";
+function Header({ sortType, sortTypeChangeHandeler }) {
+  const handelclick = async (sort) => {
+    await sortTypeChangeHandeler(sort);
+  };
   return (
     <>
       <Card className="header-card">
@@ -10,7 +14,16 @@ function Header() {
             Team Name
           </ListGroup.Item>
           <ListGroup.Item className="header-card-item-second">
-            City
+            <span>City</span>
+            {sortType === "asc" ? (
+              <span className="city-sort-logo">
+                <GoTriangleDown onClick={() => handelclick("desc")} />
+              </span>
+            ) : (
+              <span className="city-sort-logo">
+                <GoTriangleUp onClick={() => handelclick("asc")} />
+              </span>
+            )}
           </ListGroup.Item>
           <ListGroup.Item className="header-card-item-third">
             Abbreviation

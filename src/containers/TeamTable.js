@@ -2,9 +2,10 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import TableCards from "./TableCards";
 import Pagination from "../components/pagination/Pagination";
+import Loader from "../components/loader/Loader";
 import "./styles.css";
 const CONTENT_PER_PAGE = 8;
-const TeamTable = ({ searchWord, selectedTeam }) => {
+const TeamTable = ({ searchWord, selectedTeam, selectedTeamId }) => {
   const [fetchData, setFetchData] = useState([]);
   const [teamData, setTeamData] = useState([]);
   const [totalPageCount, setTotalPageCount] = useState(0);
@@ -12,6 +13,9 @@ const TeamTable = ({ searchWord, selectedTeam }) => {
   const [countArray, setCountArray] = useState([]);
   const [startIndex, setStartIndex] = useState(0);
   const [endIndex, setEndIndex] = useState(CONTENT_PER_PAGE - 1);
+  const [sortType, setSortType] = useState("asc");
+  const [isLoading, setIsLoading] = useState("true");
+
   useEffect(() => {
     axios
       .get("https://www.balldontlie.io/api/v1/teams")
@@ -19,11 +23,24 @@ const TeamTable = ({ searchWord, selectedTeam }) => {
         const { data } = resp.data;
         await setFetchData(data);
         await HandelCount(data);
+        await setIsLoading(false);
       })
       .catch((err) => {
         console.log(err);
       });
   }, []);
+
+  useEffect(() => {
+    HandelCount(teamData);
+  }, [sortType]);
+
+  const sortData = (data) => {
+    let sorted = data.sort((a, b) => {
+      const isReversed = sortType === "asc" ? 1 : -1;
+      return isReversed * a.city.localeCompare(b.city);
+    });
+    return sorted;
+  };
 
   const HandelCount = async (data) => {
     const PageCount = Math.ceil(data.length / CONTENT_PER_PAGE);
@@ -39,7 +56,7 @@ const TeamTable = ({ searchWord, selectedTeam }) => {
       });
     }
     await setCountArray(arr);
-    await setTeamData(data);
+    await setTeamData(sortData(data));
   };
   const pageDecrease = () => {
     if (currentPage !== 1) {
@@ -80,26 +97,39 @@ const TeamTable = ({ searchWord, selectedTeam }) => {
     HandelCount(tempArr);
   };
 
+  const sortChange = async (sort) => {
+    await setSortType((state) => sort);
+  };
+
   useEffect(() => {
     handelSearch(searchWord);
   }, [searchWord]);
   return (
     <>
       <div className="table">
-        <TableCards
-          teamData={teamData}
-          startIndex={startIndex}
-          endIndex={endIndex}
-          selectedTeam={selectedTeam}
-        />
-        <div className="pagination-position">
-          <Pagination
-            totalPage={totalPageCount}
-            currentPage={currentPage}
-            pageDecrease={pageDecrease}
-            pageIncrease={pageIncrease}
-          />
-        </div>
+        {isLoading ? (
+          <Loader />
+        ) : (
+          <>
+            <TableCards
+              teamData={teamData}
+              startIndex={startIndex}
+              endIndex={endIndex}
+              selectedTeam={selectedTeam}
+              sortType={sortType}
+              sortChange={sortChange}
+              selectedTeamId={selectedTeamId}
+            />
+            <div className="pagination-position">
+              <Pagination
+                totalPage={totalPageCount}
+                currentPage={currentPage}
+                pageDecrease={pageDecrease}
+                pageIncrease={pageIncrease}
+              />
+            </div>{" "}
+          </>
+        )}
       </div>
     </>
   );

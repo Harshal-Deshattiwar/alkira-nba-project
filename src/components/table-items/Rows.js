@@ -1,21 +1,23 @@
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import "./rows.css";
-function Rows({ data, selectedTeam }) {
+function Rows({ data, selectedTeam, selectedTeamId }) {
   const handelClick = (id) => {
     selectedTeam(id);
   };
   return (
     <Card
-      className="row-card"
       id={data.id}
+      className={
+        data.id === Number(selectedTeamId) ? "row-card-selected" : "row-card"
+      }
       onClick={(e) => handelClick(e.currentTarget.id)}
     >
       <ListGroup variant="flush" className="row-card-item">
-        <ListGroup.Item className="row-card-item-first">
+        <ListGroup.Item className="row-card-item-first" cy-data={data.name}>
           {data.name}
         </ListGroup.Item>
-        <ListGroup.Item className="row-card-item-second">
+        <ListGroup.Item className="row-card-item-second" cy-data={data.city}>
           {data.city}
         </ListGroup.Item>
         <ListGroup.Item className="row-card-item-third">

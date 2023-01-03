@@ -17,7 +17,11 @@ const MainPage = () => {
       <div className="main-page">
         <Title />
         <SearchBar searchInput={handelSearchInput} />
-        <TeamTable searchWord={searchData} selectedTeam={selectedTeam} />
+        <TeamTable
+          searchWord={searchData}
+          selectedTeam={selectedTeam}
+          selectedTeamId={selectedTeamId}
+        />
         <CustomModal
           selectedTeamId={selectedTeamId}
           setSelectedTeamId={setSelectedTeamId}

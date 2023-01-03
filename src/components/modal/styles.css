@@ -49,7 +49,8 @@
 }
 
 .modal--header-cross {
-  margin-left: 400px;
+  cursor: pointer;
+  margin-left: 350px;
   cursor: pointer;
   margin-top: 10px;
   font-weight: 700;
@@ -59,4 +60,104 @@
   background: #d8dfe4;
   outline-width: 0;
   border: 0px;
+}
+
+.custom-modal--team-name {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 56px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  width: 440px;
+  height: 58px;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+.custom-modal--total-games {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 56px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  width: 375px;
+  height: 58px;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+
+.custom-modal {
+  font-family: "Roboto";
+  font-style: normal;
+}
+
+.custom-modal-random-game-detials {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 90px;
+}
+
+.custom-modal--date {
+  margin-left: 25px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 90px;
+  display: flex;
+  align-items: center;
+  width: 400px;
+  height: 58px;
+  white-space: nowrap;
+}
+
+.custom-modal--home-team-name {
+  margin-top: 20px;
+  margin-left: 25px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 90px;
+  display: flex;
+  align-items: center;
+  width: 360px;
+  height: 58px;
+  white-space: nowrap;
+}
+
+.custom-modal--home-team-score {
+  margin-top: 20px;
+  margin-left: 25px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 90px;
+  display: flex;
+  align-items: center;
+  width: 350px;
+  height: 58px;
+  white-space: nowrap;
+}
+
+.custom-modal--visitor-team-name {
+  margin-top: 20px;
+  margin-left: 25px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 90px;
+  display: flex;
+  align-items: center;
+  width: 375px;
+  height: 58px;
+  white-space: nowrap;
+}
+
+.custom-modal--visitor-team-score {
+  margin-top: 20px;
+  margin-left: 25px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 90px;
+  display: flex;
+  align-items: center;
+  width: 350px;
+  height: 58px;
+  white-space: nowrap;
 }
