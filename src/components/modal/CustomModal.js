@@ -49,7 +49,7 @@ const CustomModal = ({ selectedTeamId, setSelectedTeamId }) => {
   };
   useEffect(() => {
     selectedTeamId ? fetcheDetail(selectedTeamId) : setShow(false);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedTeamId]);
 
   const handelClickAway = (event) => {
@@ -63,7 +63,7 @@ const CustomModal = ({ selectedTeamId, setSelectedTeamId }) => {
     return () => {
       document.addEventListener("click", handelClickAway, true);
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <>
@@ -101,23 +101,23 @@ const CustomModal = ({ selectedTeamId, setSelectedTeamId }) => {
                 Random Game Details:
               </span>
               <span className="custom-modal--date">
-                <span style={{ "margin-right": "230px" }}>Date</span>
+                <span style={{ marginRight: "230px" }}>Date</span>
                 <span>{gameData[0].date.slice(0, 10)}</span>
               </span>
               <span className="custom-modal--home-team-name">
-                <span style={{ "margin-right": "150px" }}>Home Team</span>
+                <span style={{ marginRight: "150px" }}>Home Team</span>
                 <span>{gameData[0].home_team.name}</span>
               </span>
               <span className="custom-modal--home-team-score">
-                <span style={{ "margin-right": "85px" }}>Home Team Score</span>
+                <span style={{ marginRight: "85px" }}>Home Team Score</span>
                 <span>{gameData[0].home_team_score}</span>
               </span>
               <span className="custom-modal--visitor-team-name">
-                <span style={{ "margin-right": "150px" }}>Visitor Team</span>
+                <span style={{ marginRight: "150px" }}>Visitor Team</span>
                 <span>{gameData[0].visitor_team.name}</span>
               </span>
               <span className="custom-modal--visitor-team-score">
-                <span style={{ "margin-right": "90px" }}>Home Team Score</span>
+                <span style={{ marginRight: "90px" }}>Home Team Score</span>
                 <span>{gameData[0].visitor_team_score}</span>
               </span>
             </>

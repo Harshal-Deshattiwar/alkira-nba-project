@@ -1,8 +1,9 @@
 .modal-container {
+  max-width: 1900px;
   position: fixed;
   z-index: 10;
   top: 0px;
-  right: 0px;
+  right: 50px;
   left: 0px;
   bottom: 0px;
   overflow-y: auto;
@@ -33,7 +34,7 @@
 .modal--header-box {
   display: flex;
   background: #d8dfe4;
-  width: 665px;
+  width: 607px;
   height: 81px;
   margin-left: -40px;
   margin-top: -32px;

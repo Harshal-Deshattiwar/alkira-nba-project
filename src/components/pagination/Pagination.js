@@ -3,7 +3,7 @@ const Pagination = ({ totalPage, currentPage, pageIncrease, pageDecrease }) => {
   return (
     <>
       <div className="pagination">
-        <button onClick={pageDecrease}>
+        <button onClick={pageDecrease} style={{ cursor: "pointer" }}>
           <span>{"<"}</span>
         </button>
         <button>
@@ -12,7 +12,7 @@ const Pagination = ({ totalPage, currentPage, pageIncrease, pageDecrease }) => {
         <button>
           <span>{totalPage}</span>
         </button>
-        <button onClick={pageIncrease}>
+        <button onClick={pageIncrease} style={{ cursor: "pointer" }}>
           <span>{">"}</span>
         </button>
       </div>
