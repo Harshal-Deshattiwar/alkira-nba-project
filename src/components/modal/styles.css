@@ -1,5 +1,5 @@
 .modal-container {
-  max-width: 1900px;
+  max-width: 1450px;
   position: fixed;
   z-index: 10;
   top: 0px;
@@ -21,12 +21,14 @@
 }
 
 .modal-box {
+  margin-top: 100px;
   float: right;
   position: relative;
   background-color: #f9f8f8;
   padding: 2rem 2rem 2.5rem 2.5rem;
   box-shadow: 0 25px 50px -12px rgb(0 0 0 / 025);
-  max-width: 535px;
+  max-height: 640px;
+  max-width: 468px;
   width: 100%;
   border-radius: 0.125rem;
 }
@@ -34,8 +36,8 @@
 .modal--header-box {
   display: flex;
   background: #d8dfe4;
-  width: 607px;
-  height: 81px;
+  width: 540px;
+  height: 60px;
   margin-left: -40px;
   margin-top: -32px;
   align-items: center;
@@ -43,7 +45,7 @@
 
 .modal--header {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 22px;
   line-height: 56px;
   color: #000000;
   margin-left: 45px;
@@ -51,9 +53,8 @@
 
 .modal--header-cross {
   cursor: pointer;
-  margin-left: 350px;
+  margin-left: 300px;
   cursor: pointer;
-  margin-top: 10px;
   font-weight: 700;
   font-size: 19px;
   line-height: 56px;
@@ -65,26 +66,23 @@
 
 .custom-modal--team-name {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 56px;
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   align-items: center;
-  width: 440px;
+  width: 350px;
   height: 58px;
-  justify-content: space-between;
   white-space: nowrap;
 }
 .custom-modal--total-games {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 56px;
-  margin-top: 20px;
   display: flex;
   align-items: center;
-  width: 375px;
+  width: 270px;
   height: 58px;
-  justify-content: space-between;
   white-space: nowrap;
 }
 
@@ -95,19 +93,19 @@
 
 .custom-modal-random-game-detials {
   font-weight: 700;
-  font-size: 24px;
-  line-height: 90px;
+  font-size: 16px;
+  line-height: 60px;
 }
 
 .custom-modal--date {
   margin-left: 25px;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 90px;
+  font-size: 16px;
+  line-height: 60px;
   display: flex;
   align-items: center;
   width: 400px;
-  height: 58px;
+  height: 40px;
   white-space: nowrap;
 }
 
@@ -115,12 +113,12 @@
   margin-top: 20px;
   margin-left: 25px;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 90px;
+  font-size: 16px;
+  line-height: 60px;
   display: flex;
   align-items: center;
   width: 360px;
-  height: 58px;
+  height: 40px;
   white-space: nowrap;
 }
 
@@ -128,12 +126,12 @@
   margin-top: 20px;
   margin-left: 25px;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 90px;
+  font-size: 16px;
+  line-height: 60px;
   display: flex;
   align-items: center;
   width: 350px;
-  height: 58px;
+  height: 40px;
   white-space: nowrap;
 }
 
@@ -141,12 +139,12 @@
   margin-top: 20px;
   margin-left: 25px;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 90px;
+  font-size: 16px;
+  line-height: 60px;
   display: flex;
   align-items: center;
   width: 375px;
-  height: 58px;
+  height: 40px;
   white-space: nowrap;
 }
 
@@ -154,11 +152,115 @@
   margin-top: 20px;
   margin-left: 25px;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 90px;
+  font-size: 16px;
+  line-height: 60px;
   display: flex;
   align-items: center;
   width: 350px;
-  height: 58px;
+  height: 40px;
   white-space: nowrap;
 }
+
+
+@media screen and (max-width: 900px) {
+  .modal-box {
+    margin-top: 5px;
+  }
+  .custom-modal--team-name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 440px;
+    height: 58px;
+    white-space: nowrap;
+  }
+  .custom-modal--total-games {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    width: 375px;
+    height: 58px;
+    white-space: nowrap;
+  }
+  
+  .custom-modal {
+    font-family: "Roboto";
+    font-style: normal;
+  }
+  
+  .custom-modal-random-game-detials {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 60px;
+  }
+  
+  .custom-modal--date {
+    margin-left: 25px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 40px;
+    white-space: nowrap;
+  }
+  
+  .custom-modal--home-team-name {
+    margin-top: 10px;
+    margin-left: 25px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    width: 360px;
+    height: 40px;
+    white-space: nowrap;
+  }
+  
+  .custom-modal--home-team-score {
+    margin-top: 10px;
+    margin-left: 25px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 40px;
+    white-space: nowrap;
+  }
+  
+  .custom-modal--visitor-team-name {
+    margin-top: 10px;
+    margin-left: 25px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    width: 375px;
+    height: 40px;
+    white-space: nowrap;
+  }
+  
+  .custom-modal--visitor-team-score {
+    margin-top: 10px;
+    margin-left: 25px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 40px;
+    white-space: nowrap;
+  }
+}
+

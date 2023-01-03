@@ -16,23 +16,21 @@ const TableCards = ({
   };
   return (
     <>
-      <div className="card-arrange">
-        <Header
-          sortType={sortType}
-          sortTypeChangeHandeler={sortTypeChangeHandeler}
-        />
-        {entireData &&
-          entireData.map((data) => {
-            return (
-              <Rows
-                key={data.id}
-                data={data}
-                selectedTeam={selectedTeam}
-                selectedTeamId={selectedTeamId}
-              />
-            );
-          })}
-      </div>
+      <Header
+        sortType={sortType}
+        sortTypeChangeHandeler={sortTypeChangeHandeler}
+      />
+      {entireData &&
+        entireData.map((data) => {
+          return (
+            <Rows
+              key={data.id}
+              data={data}
+              selectedTeam={selectedTeam}
+              selectedTeamId={selectedTeamId}
+            />
+          );
+        })}
     </>
   );
 };

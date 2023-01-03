@@ -1,42 +1,43 @@
 .header-card-item {
   display: flex;
-  height: 42px;
+  height: 28px;
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 56px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 38px;
   align-items: center;
   text-align: center;
   color: #ffffff;
+  justify-content: space-between;
 }
 
 .header-card {
-  max-width: 1087px;
-  height: 79px;
+  max-width: 800px;
+  height: 53px;
   background: #074684;
   border-radius: 5px;
 }
 
 .header-card-item-first {
-  width: 155px;
+  width: 104px;
   margin-top: 30px;
   margin-left: 30px;
 }
 .header-card-item-second {
-  width: 200px;
+  width: 134px;
   margin-top: 30px;
 }
 .header-card-item-third {
-  width: 150px;
+  width: 100.5px;
   margin-top: 30px;
 }
 .header-card-item-fourth {
-  width: 180px;
+  width: 120px;
   margin-top: 30px;
 }
 .header-card-item-fifth {
-  width: 164px;
+  width: 110px;
   margin-top: 30px;
 }
 
@@ -48,22 +49,22 @@
 
 @media screen and (max-width: 900px) {
   .header-card-item-first {
-    width: 180px;
+    width: 120px;
     margin-top: 30px;
     margin-left: 30px;
   }
   .header-card {
-    width: 800px;
-    height: 79px;
+    width: 536px;
+    height: 53px;
     background: #074684;
     border-radius: 5px;
   }
   .header-card-item-second {
-    width: 150px;
+    width: 101px;
     margin-top: 30px;
   }
   .header-card-item-fourth {
-    width: 150px;
+    width: 101px;
     margin-top: 30px;
   }
 }
