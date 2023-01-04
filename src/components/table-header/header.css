@@ -47,7 +47,7 @@
   margin-top: 10px;
 }
 
-@media screen and (max-width: 900px) {
+@media (min-width: 451px) and (max-width: 900px) {
   .header-card-item-first {
     width: 120px;
     margin-top: 30px;
@@ -66,5 +66,32 @@
   .header-card-item-fourth {
     width: 101px;
     margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header-card-item {
+    height: 12px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .header-card {
+    max-width: 360px;
+    height: 30px;
+  }
+  .header-card-item-first {
+    margin-top: 20px;
+    margin-left: 5px;
+  }
+  .header-card-item-second{
+    width:100px;
+    margin-top: 20px;
+  }
+  .header-card-item-third,
+  .header-card-item-fourth,
+  .header-card-item-fifth {
+    margin-top: 20px;
   }
 }

@@ -41,17 +41,14 @@
 }
 .row-card-item-second {
   width: 134px;
-  /* margin-right: 21px; */
   margin-top: 30px;
 }
 .row-card-item-third {
   width: 100.5px;
-  /* margin-right: 44px; */
   margin-top: 30px;
 }
 .row-card-item-fourth {
   width: 120px;
-  /* margin-right: 88px; */
   margin-top: 30px;
 }
 .row-card-item-fifth {
@@ -59,7 +56,7 @@
   margin-top: 30px;
 }
 
-@media screen and (max-width: 900px) {
+@media (min-width: 451px) and (max-width: 900px) {
   .row-card {
     margin-top: 10px;
     width: 536px;
@@ -70,22 +67,49 @@
   .row-card-selected {
     max-width: 536px;
     height: 28px;
-    
   }
   .row-card-item-first {
-  margin-top: 0px;
-  margin-left: 30px;
+    margin-top: 0px;
+    margin-left: 30px;
+  }
+  .row-card-item-second {
+    margin-top: 0px;
+  }
+  .row-card-item-third {
+    margin-top: 0px;
+  }
+  .row-card-item-fourth {
+    margin-top: 0px;
+  }
+  .row-card-item-fifth {
+    margin-top: 0px;
+  }
 }
-.row-card-item-second {
-  margin-top: 0px;
-}
-.row-card-item-third {
-  margin-top: 0px;
-}
-.row-card-item-fourth {
-  margin-top: 0px;
-}
-.row-card-item-fifth {
-  margin-top: 0px;
-}
+
+@media screen and (max-width: 450px) {
+  .row-card-item {
+    height: 12px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .row-card {
+    max-width: 360px;
+    height: 30px;
+  }
+  .row-card-item-first {
+    margin-top: 20px;
+    margin-left: 5px;
+  }
+  .row-card-item-second {
+    width: 115px;
+    margin-top: 20px;
+  }
+
+  .row-card-item-third,
+  .row-card-item-fourth,
+  .row-card-item-fifth {
+    margin-top: 20px;
+  }
 }

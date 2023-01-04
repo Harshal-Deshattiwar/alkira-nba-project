@@ -31,13 +31,19 @@
     max-width: 550px;
   }
 }
-@media screen and (max-width: 699px) {
+@media (max-width: 451px) and (max-width: 699px) {
   .main-page {
     margin-top: 49px;
     margin-left: 40px;
   }
   .table {
     max-width: 550px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main-page {
+    margin-top: 49px;
+    margin-left: 10px;
   }
 }
 
